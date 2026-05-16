@@ -199,8 +199,10 @@ let map, userMarker;
 // Configuration dyal lmap
 function initMap() {
     map = L.map('map', { center:[34.6870,-1.9115],zoom:14 });
-    L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
-        attribution:'© OpenStreetMap © CARTO', subdomains:'abcd', maxZoom:19
+    //L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+        //attribution:'© OpenStreetMap © CARTO', subdomains:'abcd', maxZoom:19
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '© OpenStreetMap contributors'
     }).addTo(map);
 }
 
